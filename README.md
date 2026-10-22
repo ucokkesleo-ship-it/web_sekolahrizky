@@ -1,77 +1,23 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Web Sekolah Rizky
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Website sekolah ini dibuat dengan Laravel 12. Halaman beranda saat ini berupa tampilan statis, sehingga bisa dipublikasikan gratis melalui GitHub Pages tanpa kartu kredit.
 
-## About Laravel
+## Menjalankan secara lokal
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+1. Jalankan `composer install`.
+2. Salin `.env.example` menjadi `.env`.
+3. Jalankan `php artisan key:generate`.
+4. Jalankan `php artisan serve`, lalu buka alamat lokal yang ditampilkan.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Deploy gratis ke GitHub Pages
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Workflow `.github/workflows/deploy-pages.yml` membangun halaman statis dari tampilan beranda dan menerbitkannya setiap kali ada perubahan di branch `main`.
 
-## Learning Laravel
+Untuk mengaktifkan deployment pertama kali:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. Buka **Settings > Pages** pada repository GitHub.
+2. Pada bagian **Build and deployment**, pilih **GitHub Actions** sebagai source.
+3. Tunggu workflow **Deploy to GitHub Pages** selesai dengan status berhasil pada tab **Actions**.
+4. Buka `https://ucokkesleo-ship-it.github.io/web_sekolahrizky/`.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-## Deploy ke Render
-
-Project ini menyertakan `render.yaml` dan `Dockerfile` untuk deployment Laravel di Render.
-
-1. Buat APP_KEY lokal dengan menjalankan `php artisan key:generate --show`. Jangan simpan atau commit nilai ini ke GitHub.
-2. Di dashboard Render, pilih **New > Blueprint**, lalu hubungkan repository GitHub `ucokkesleo-ship-it/web_sekolahrizky`.
-3. Saat diminta, isi `APP_KEY` dengan nilai yang dibuat pada langkah pertama, lalu jalankan deployment.
-4. Setelah deployment berhasil, buka URL `onrender.com` yang diberikan Render.
-
-Layanan Render gratis dapat berhenti sementara saat tidak ada aktivitas dan perlu waktu untuk aktif kembali saat dibuka.
+Halaman GitHub Pages ini hanya menayangkan tampilan statis. Route dinamis Laravel, PHP, database, dan pengiriman formulir tidak dijalankan di GitHub Pages.
