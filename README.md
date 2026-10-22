@@ -64,3 +64,14 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Deploy ke Render
+
+Project ini menyertakan `render.yaml` dan `Dockerfile` untuk deployment Laravel di Render.
+
+1. Buat APP_KEY lokal dengan menjalankan `php artisan key:generate --show`. Jangan simpan atau commit nilai ini ke GitHub.
+2. Di dashboard Render, pilih **New > Blueprint**, lalu hubungkan repository GitHub `ucokkesleo-ship-it/web_sekolahrizky`.
+3. Saat diminta, isi `APP_KEY` dengan nilai yang dibuat pada langkah pertama, lalu jalankan deployment.
+4. Setelah deployment berhasil, buka URL `onrender.com` yang diberikan Render.
+
+Layanan Render gratis dapat berhenti sementara saat tidak ada aktivitas dan perlu waktu untuk aktif kembali saat dibuka.
