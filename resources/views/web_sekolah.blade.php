@@ -25,7 +25,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav px-5 mx-md-5">
                         <li class="nav-item">
                             <a class="nav-link mx-md-2" href="#">Beranda</a>
@@ -156,11 +156,11 @@
                     <div class="card-header text-dark fw-bold" style="background-color: #80808033">
                         Sambutan Kepala Sekolah
                     </div>
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="float-md-start p-2">
-                            <img src="/images/images.jpg" alt="" width="300">
+                            <img class="img-fluid" style="width: 300px;; max-width: 100%; height: auto;" src="/images/images.jpg" alt="">
                         </div>
-                        <div class="mx-md-5 p-2 d-block">
+                        <div class="p-2 d-block">
                             Assalamu'alaikum Warahmatullahi Wabarakatuh,
 
                             Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa atas segala rahmat dan
@@ -205,12 +205,11 @@
                         </a>
                     </div>
                     <div class="container">
-                        <div class="row row-cols-4 mt-md-2 mb-md-2">
+                        <div class="row row-cols-2 row-cols-md-4 g-3 mt-1 mb-2">
                             <div class="col">
                                 <div class="card h-100">
                                     <div class="card-body">
-                                        <img src="/images/child-student-playing-school.jpg" alt=""
-                                            width="127">
+                                        <img class="img-fluid" src="/images/child-student-playing-school.jpg" alt="">
                                         <h6 class="mt-md-1 fw-bold">Kegiatan Membaca dan Belajar Bersama</h6>
                                         <p class="fw-lighter mt-md-1">📅 20 September 2026 <br>
                                             Siswa-siswi antusias mengikuti program literasi rutin setiap minggu
@@ -223,8 +222,8 @@
                             <div class="col">
                                 <div class="card h-100">
                                     <div class="card-body">
-                                        <img src="/images/little-boy-celebrating-new-years-eve-home.jpg"
-                                            alt="" width="127">
+                                        <img class="img-fluid" src="/images/little-boy-celebrating-new-years-eve-home.jpg"
+                                            alt="">
                                         <h6 class="mt-md-1 fw-bold">Peringatan Hari Kartini di Sekolah
                                         </h6>
                                         <p class="fw-lighter mt-md-4">📅 21 April 2026 <br>
@@ -238,8 +237,7 @@
                             <div class="col">
                                 <div class="card h-100">
                                     <div class="card-body">
-                                        <img src="/images/woman-creating-their-own-vision-board.jpg" alt=""
-                                            width="127">
+                                        <img class="img-fluid" src="/images/woman-creating-their-own-vision-board.jpg" alt="">
                                         <h6 class="mt-md-1 fw-bold">Pembelajaran Interaktif di Ruang Kelas Ruang
                                         </h6>
                                         <p class="fw-lighter mt-md-1">📅 15 September 2026 <br>
@@ -253,8 +251,7 @@
                             <div class="col">
                                 <div class="card h-100">
                                     <div class="card-body">
-                                        <img src="/images/kid-having-fun-jungle-party.jpg" alt=""
-                                            width="127">
+                                        <img class="img-fluid" src="/images/kid-having-fun-jungle-party.jpg" alt="">
                                         <h6 class="mt-md-1 fw-bold">Upacara Bendera dan Latihan Baris-Berbaris</h6>
                                         <p class="fw-lighter mt-md-1">📅 22 September 2026 <br>
                                             Upacara bendera dan latihan baris-berbaris rutin dilaksanakan setiap
@@ -268,6 +265,7 @@
                 </div>
             </div>
         </div>
+
         {{-- Card 3 --}}
         <div class="col-md-4">
             <div class="card mt-3">
@@ -283,38 +281,8 @@
                     <div class="row row-cols-md-1">
                         <div class="col">
                             <li class="list-group-item">
-                                <div class="row row-cols-3 text-truncate">
-                                    <div class="col-md-2">
-                                        <div class="border d-block justify-content-md-center p-2 rounded"
-                                            style="background-color: #80808033; width: 3rem; height: 3rem; margin-top: 15px;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                                                fill="currentColor" class="bi bi-file-earmark-text-fill"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 d-flex">
-                                        <a class="text-dark text-decoration-none" href="#">
-                                            Pendaftaran Peserta Didik Baru <br> Tahun Ajaran 2025/2026 <br> 📅 22
-                                            September 2026
-                                        </a>
-                                    </div>
-                                    <div class="col-md-2 float-end">
-                                        <a href="" class="text-decoration-none text-dark">
-                                            <h4 style="font-size: 2rem; margin-top: 15px;">
-                                                >
-                                            </h4>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                        </div>
-                        <div class="col">
-                            <li class="list-group-item">
-                                <div class="row row-cols-3 text-truncate">
-                                    <div class="col-md-2">
+                                <div class="row align-items-center g-2">
+                                    <div class="col-2 col-md-2">
                                         <div class="border d-block justify-content-md-center p-2 rounded"
                                             style="background-color: #80808033; width: 3rem; height: 3rem; margin-top: 15px;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
@@ -343,8 +311,8 @@
                         </div>
                         <div class="col">
                             <li class="list-group-item">
-                                <div class="row row-cols-3 text-truncate">
-                                    <div class="col-md-2">
+                                <div class="row align-items-center g-2">
+                                    <div class="col-2 col-md-2">
                                         <div class="border d-block justify-content-md-center p-2 rounded"
                                             style="background-color: #80808033; width: 3rem; height: 3rem; margin-top: 15px;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
@@ -373,8 +341,8 @@
                         </div>
                         <div class="col">
                             <li class="list-group-item">
-                                <div class="row row-cols-3 text-truncate">
-                                    <div class="col-md-2">
+                                <div class="row align-items-center g-2">
+                                    <div class="col-2 col-md-2">
                                         <div class="border d-block justify-content-md-center p-2 rounded"
                                             style="background-color: #80808033; width: 3rem; height: 3rem; margin-top: 15px;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
@@ -403,8 +371,8 @@
                         </div>
                         <div class="col">
                             <li class="list-group-item">
-                                <div class="row row-cols-3 text-truncate">
-                                    <div class="col-md-2">
+                                <div class="row align-items-center g-2">
+                                    <div class="col-2 col-md-2">
                                         <div class="border d-block justify-content-md-center p-2 rounded"
                                             style="background-color: #80808033; width: 3rem; height: 3rem; margin-top: 15px;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
@@ -433,8 +401,8 @@
                         </div>
                         <div class="col">
                             <li class="list-group-item">
-                                <div class="row row-cols-3 text-truncate">
-                                    <div class="col-md-2">
+                                <div class="row align-items-center g-2">
+                                    <div class="col-2 col-md-2">
                                         <div class="border d-block justify-content-md-center p-2 rounded"
                                             style="background-color: #80808033; width: 3rem; height: 3rem; margin-top: 15px;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
@@ -459,14 +427,36 @@
                                         </a>
                                     </div>
                                 </div>
-                                <!-- Button Lihat Pengumuman -->
-                                <a href="#">
-                                    <div class="d-flex justify-content-center mt-md-2 mb-md-2">
-                                        <button type="button"
-                                            style="border: 1px; border-radius: 24px; color: #0000FF; width: 300px; height: 40px; font-weight: 700">Lihat
-                                            Semua Pengumuman →</button>
+                            </li>
+                        </div>
+                        <div class="col">
+                            <li class="list-group-item">
+                                <div class="row align-items-center g-2">
+                                    <div class="col-2 col-md-2">
+                                        <div class="border d-block justify-content-md-center p-2 rounded"
+                                            style="background-color: #80808033; width: 3rem; height: 3rem; margin-top: 15px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-file-earmark-text-fill"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1z" />
+                                            </svg>
+                                        </div>
                                     </div>
-                                </a>
+                                    <div class="col-md-8">
+                                        <a class="text-dark text-decoration-none" href="#">
+                                            Pendaftaran Peserta Didik Baru <br> Tahun Ajaran 2025/2026 <br> 📅 22
+                                            September 2026
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 float-end">
+                                        <a href="" class="text-decoration-none text-dark">
+                                            <h4 style="font-size: 2rem; margin-top: 15px;">
+                                                >
+                                            </h4>
+                                        </a>
+                                    </div>
+                                </div>
                             </li>
                         </div>
                     </div>
@@ -476,8 +466,8 @@
     </div>
 
     <!-- Footer -->
-    <div class="row p-0 m-0" style="background-color: #6E8FB2; height: 120px;">
-        <div class="col-md" style="margin-top: 15px; border-right: 3px solid white; height: 97px;">
+    <div class="row p-3 g-0" style="background-color: #6E8FB2;">
+        <div class="col-md" style="border-right: 3px solid white; height: 97px;">
             <div><img class="float-start" style="margin-right: 30px; margin-left: 40px"
                     src="/images/Gemini_Generated_Image_3cl1z33cl1z33cl1-removebg-preview.png" alt=""
                     width="55" height="45">
@@ -486,7 +476,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md" style="margin-top: 15px; border-right: 3px solid white; height: 97px;">
+        <div class="col-12 col-md-4" style="border-right: 3px solid white; height: 97px;">
             <div><img class="float-start" style="margin-right: 30px; margin-left: 70px"
                     src="/images/a_clean_minimalist_high_contrast_graphic_logo_on.png" alt=""
                     width="55" height="45">
@@ -495,7 +485,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md d-flex justify-content-center" style="margin-top: 15px;">
+        <div class="col-12 col-md-4 d-flex justify-content-center">
             <a class="navbar-brand fw-bold" style="color: white; margin-top: 37px;">© Copyright Sekolah Rakyat<br>
             </a>
         </div>
